@@ -8,22 +8,24 @@ html{
 	box-sizing: inherit;
 }
 
-body{
+body {
+	margin: 0px auto;
+	padding: 0px;
 	width: 100vw;
+	max-width: 100vh;
 	height: 100vh;
 	max-height: 100vw;
-	max-width: 100vh;
-	margin: 0px auto;
 }
 
-.blackBG{
-	background-color: black;
-}
-
-div {
-	float:left;
+.square {
+	float: left;
 	width: calc(100% / 32);
 	height: calc(100% / 32);
-	background-color: gray;
-	border: 1px solid #efefef;
+	background-color: white;
+	border: 1px solid red;
 }
+
+.square:not([data-is-top]) { border-top-width: 0px; }
+.square:not([data-is-left]) { border-left-width: 0px; }
+
+.square.blackBG { background-color: black; }
