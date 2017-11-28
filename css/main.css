@@ -1,0 +1,29 @@
+/* main.css */
+
+html{
+	box-sizing: border-box;
+}
+
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	max-height: 100vw;
+	max-width: 100vh;
+	margin: 0px auto;
+}
+
+.blackBG{
+	background-color: black;
+}
+
+div {
+	float:left;
+	width: calc(100% / 32);
+	height: calc(100% / 32);
+	background-color: gray;
+	border: 1px solid #efefef;
+}
