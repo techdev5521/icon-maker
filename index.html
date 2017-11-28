@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		
+		<title>Icon Maker</title>
+
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="main.css">
+
+		<!-- JavaScript -->
+
+	</head>
+
+	<body>
+
+		
+
+		<script>
+			window.addEventListener('DOMContentLoaded', function (){
+				document.querySelectorAll('.square').forEach(function (el) {
+					el.addEventListener('click', function (e) {
+						console.log("Toggling...");
+						e.target.classList.toggle('blackBG');
+					});
+				});
+			});
+		</script>
+
+	</body>
+
+</html>
