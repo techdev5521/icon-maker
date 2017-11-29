@@ -9,12 +9,12 @@ html{
 }
 
 body {
+	margin: 0px auto;
 	padding: 0px;
 	width: 100vw;
 	max-width: 100vh;
 	height: 100vh;
 	max-height: 100vw;
-	background-color: #eee;
 }
 
 .square {
@@ -22,7 +22,7 @@ body {
 	width: calc(100% / 32);
 	height: calc(100% / 32);
 	background-color: white;
-	border: .01em solid #ccc;
+	border: 1px solid red;
 }
 
 .square:not([data-is-top]) { border-top-width: 0px; }
