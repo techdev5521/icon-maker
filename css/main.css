@@ -30,3 +30,5 @@ body {
 .square:not([data-is-left]) { border-left-width: 0px; }
 
 .square.blackBG { background-color: black; }
+.square:not(.blackBG):hover { background-color: lightgray; }
+.square.blackBG:hover { background-color: darkgray; }

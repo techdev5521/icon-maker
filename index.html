@@ -12,8 +12,9 @@
 
 	<body>
 		<script>
+			var beginDrawBlack = true;
 			window.addEventListener('DOMContentLoaded', function (){
-				var gridSize = 32, el;
+				var gridSize = 32, bgClass = 'blackBG', el;
 
 				for (var y = 1; y <= gridSize; y++) {
 					for (var x = 1; x <= gridSize; x++) {
@@ -22,8 +23,14 @@
 						el.id = 'pix-' + x + '-' + y;
 						if (x == 1) el.dataset.isLeft = 'true';
 						if (y == 1) el.dataset.isTop = 'true';
-						el.addEventListener('click', function (e) {
-							e.target.classList.toggle('blackBG');
+						el.addEventListener('mousedown', function (e) {
+							window.beginDrawBlack = !e.target.classList.contains(bgClass);
+							e.target.classList.toggle(bgClass);
+						});
+						el.addEventListener('mouseover', function (e) {
+							if ([1, 3].includes(e.buttons)) {
+								e.target.classList.toggle(bgClass, window.beginDrawBlack);
+							}
 						});
 						document.body.appendChild(el);
 					}
