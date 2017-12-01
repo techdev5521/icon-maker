@@ -11,11 +11,16 @@ html{
 body {
 	margin: 0px auto;
 	padding: 0px;
+	background: linear-gradient(135deg, #56c1ff 0%,#b7156d 100%);
+}
+
+.squareWrap{
 	width: 100vw;
 	max-width: 100vh;
 	height: 100vh;
 	max-height: 100vw;
-	background-color: #efefef;
+	margin-left: 5em;
+	float: left;
 }
 
 .square {
@@ -32,3 +37,18 @@ body {
 .square.blackBG { background-color: black; }
 .square:not(.blackBG):hover { background-color: lightgray; }
 .square.blackBG:hover { background-color: darkgray; }
+
+button{
+	font-family: 'Arimo', sans-serif;
+	border: 3px solid white;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	font-size: 2em;
+}
+
+.outline{
+	background-color: transparent;
+	color: white;
+}
