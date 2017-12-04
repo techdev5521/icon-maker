@@ -12,19 +12,59 @@ body {
 	margin: 0px auto;
 	padding: 0px;
 	background: linear-gradient(135deg, #56c1ff 0%,#b7156d 100%);
+	font-family: 'Arimo', sans-serif;
+	color: white;
 }
+
+#text{
+	width: 40%;
+	float: left;
+}
+
+#grid{
+	width: 60%;
+	float: right;
+}
+
+#text > *{
+	float: none;
+	text-align: center;
+}
+
+.center{
+	margin: 0px auto;
+}
+
+.title{
+	font-size: 5em;
+}
+
+.little_title{
+	font-size: 4em;
+}
+
+.big_title{
+	font-size: 8em;
+}
+
+.sub{
+	font-size: 1.4em;
+}
+
+/*****
+JAVASCRIPT CLASSES
+*****/
 
 .squareWrap{
 	width: 100vw;
 	max-width: 100vh;
 	height: 100vh;
 	max-height: 100vw;
-	margin-left: 5em;
-	float: left;
+	float: right;
 }
 
 .square {
-	float: left;
+	float: right;
 	width: calc(100% / 32);
 	height: calc(100% / 32);
 	background-color: white;
@@ -38,17 +78,55 @@ body {
 .square:not(.blackBG):hover { background-color: lightgray; }
 .square.blackBG:hover { background-color: darkgray; }
 
+/*****
+END JAVASCRIPT CLASSES
+*****/
+
 button{
-	font-family: 'Arimo', sans-serif;
 	border: 3px solid white;
 	border-radius: 10px;
 	background-color: white;
 	color: black;
-	padding: 10px;
+	padding: .9em;
 	font-size: 2em;
+	font-weight: bold;
+	float: none;
+}
+
+.filled{
+	background-color: white;
+	color: #b7156d;
 }
 
 .outline{
 	background-color: transparent;
 	color: white;
+}
+
+.rainbow{
+	background: -webkit-linear-gradient(top left, #56c1ff 0%, #b7156d 100%);
+	background: -o-linear-gradient(top left, #56c1ff 0%, #b7156d 100%);
+	background: linear-gradient(to bottom right, #56c1ff 0%, #b7156d 100%);
+	color: white;
+	border: none;
+	font-size: 3em;
+}
+
+#change{
+	padding: .5em;
+	margin-bottom: 1em;
+}
+
+#restart{
+	margin-left: 2em;
+	float: left;
+}
+
+#see{
+	float: right;
+}
+
+img{
+	display: block;
+	margin: 2em auto;
 }
